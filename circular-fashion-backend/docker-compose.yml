@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword # Root password for MySQL
+      MYSQL_DATABASE: circular_fashion_db # Database name
+      MYSQL_USER: user # Custom user
+      MYSQL_PASSWORD: userpassword # User password
+    ports:
+      - "3307:3306" # Port mapping (host:container)
+    volumes:
+      - mysql-data:/var/lib/mysql # Persistent data storage
+
+volumes:
+  mysql-data:
+    driver: local
