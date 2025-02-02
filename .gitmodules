@@ -1,0 +1,3 @@
+[submodule "circular-fashion-backend/circular-fashion-frontened"]
+	path = circular-fashion-backend/circular-fashion-frontened
+	url = https://github.com/khagendra-ui/SD2.git
