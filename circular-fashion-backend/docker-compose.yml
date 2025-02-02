@@ -10,7 +10,7 @@ services:
       MYSQL_USER: user # Custom user
       MYSQL_PASSWORD: userpassword # User password
     ports:
-      - "3307:3306" # Port mapping (host:container)
+      - "330:3306" # Port mapping (host:container)
     volumes:
       - mysql-data:/var/lib/mysql # Persistent data storage
 
